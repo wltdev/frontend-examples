@@ -1,0 +1,120 @@
+.cup {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.top {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  border-radius: 50%;
+}
+
+.inner {
+  position: absolute;
+  width: 90px;
+  top: 3px;
+  left: 5px;
+  height: 20px;
+  background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.coffee {
+  position: absolute;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c57e65, #e28462);
+  border-radius: 50%;
+}
+
+.handle {
+  position: absolute;
+  border: 10px solid black;
+  height: 60px;
+  width: 40px;
+  border-left: transparent;
+  border-bottom: transparent;
+  border-radius: 50%;
+  border-color: #dcdcdc;
+  right: -20px;
+  top: 10px;
+  transform: rotate(35deg);
+}
+
+.plate {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+  height: 80px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.plate::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+  border-radius: 50%;
+}
+
+.vapour {
+  justify-content: center;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.vapour span {
+  position: relative;
+  margin: 90x;
+  background: #fff;
+  min-width: 4px;
+  height: 70px;
+  margin: 0 1px;
+  bottom: 30px;
+  border-radius: 50%;
+  animation: vapour 5s linear infinite;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+}
+
+@keyframes vapour {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-100px) scaleX(5);
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-300px) scaleX(1);
+  }
+}

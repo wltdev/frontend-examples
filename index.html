@@ -1,68 +1,133 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="./styles.css" />
-        <link rel="stylesheet" type="text/css" href="./loading.css" />
-        <link rel="stylesheet" type="text/css" href="./coffee.css" />
-        <link rel="stylesheet" type="text/css" href="./input.css" />
-
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="title">Frontend Tests</h1>
-
-            <div class="row">
-                <div class="item">
-                    <h3 class="item-title">Loading </h3>
-    
-                    <div class="loading-wrapper">
-                        <div class="loading">
-                            <div class="loading loading-inner"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <h3 class="item-title">Coffee </h3>
-                    <!-- <div class="plate"></div> -->
-                    <div class="cup">
-                        <div class="top">
-                          <div class="vapour">                            
-                            <span style="--i:1;"></span>
-                            <span style="--i:3;"></span>
-                            <span style="--i:6;"></span>
-                            <span style="--i:5;"></span>
-                            <span style="--i:13;"></span>
-                            <span style="--i:20;"></span>
-                            <span style="--i:2;"></span>
-                            <span style="--i:7;"></span>
-                            <span style="--i:10;"></span>
-                            <span style="--i:8;"></span>
-                            <span style="--i:17;"></span>
-                            <span style="--i:11;"></span>
-                            <span style="--i:12;"></span>
-                            <span style="--i:14;"></span>
-                            <span style="--i:16;"></span>
-                          </div>
-                          
-                            <div class="inner">
-                              <div class="coffee"></div>
-                            </div> 
-                        </div> 
-                        <div class="handle"></div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <h3 class="item-title" >Custom Input</h3>
-                    <div class="input-group">
-                        <input type="text" id="input-name" required class="input" />
-                        <label for="input-name" class="input-label">Name</label>
-                    </div>
-                </div>
-            </div>            
+  <head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/loading.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/coffee.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/input.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/animated.title.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/animated.card.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/scroller.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        This Page is only <br />
+        for learning
+        <div class="rotate-words">
+          <span style="--d: 0s">CSS</span>
+          <span style="--d: 4s">Javascript</span>
+          <span style="--d: 8s">Frontend stuffs</span>
         </div>
-    </body>
-    <script>
+      </h1>
 
-    </script>
+      <div class="row">
+        <div class="item">
+          <h3 class="item-title">Loading</h3>
+
+          <div class="loading-wrapper">
+            <div class="loading">
+              <div class="loading loading-inner"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3 class="item-title">Coffee</h3>
+          <!-- <div class="plate"></div> -->
+          <div class="cup">
+            <div class="top">
+              <div class="vapour">
+                <span style="--i: 1"></span>
+                <span style="--i: 3"></span>
+                <span style="--i: 6"></span>
+                <span style="--i: 5"></span>
+                <span style="--i: 13"></span>
+                <span style="--i: 20"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 7"></span>
+                <span style="--i: 10"></span>
+                <span style="--i: 8"></span>
+                <span style="--i: 17"></span>
+                <span style="--i: 11"></span>
+                <span style="--i: 12"></span>
+                <span style="--i: 14"></span>
+                <span style="--i: 16"></span>
+              </div>
+
+              <div class="inner">
+                <div class="coffee"></div>
+              </div>
+            </div>
+            <div class="handle"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3 class="item-title">Custom Input</h3>
+          <form>
+            <div class="input-group">
+              <input type="text" id="input-name" required class="input" />
+              <label for="input-name" class="input-label">Name</label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="item">
+          <h3 class="item-title">Card</h3>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="./assets/img/shoes.png" alt="" />
+              <h3 class="card-title">Running Shoes</h3>
+            </div>
+            <div class="card-content">
+              Flat-footed runners face a number of challenges in finding the
+              right running shoe
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3 class="item-title">Scroller</h3>
+
+          <div class="scroller">
+            <div class="scroller-item">
+              <img src="./assets/img/profile1.jpg" alt="" />
+            </div>
+            <div class="scroller-item">
+              <img src="./assets/img/profile2.jpg" alt="" />
+            </div>
+            <div class="scroller-item">
+              <img src="./assets/img/profile3.jpg" alt="" />
+            </div>
+            <div class="scroller-item">
+              <img src="./assets/img/profile4.jpg" alt="" />
+            </div>
+            <div class="scroller-item">
+              <img src="./assets/img/profile5.jpg" alt="" />
+            </div>
+            <div class="scroller-item">
+              <img src="./assets/img/profile6.jpg" alt="" />
+            </div>
+            <div class="scroller-item">
+              <img src="./assets/img/profile7.jpg" alt="" />
+            </div>
+            <div class="scroller-item">
+              <img src="./assets/img/profile8.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script></script>
 </html>
