@@ -1,20 +1,26 @@
 .title {
   position: relative;
   color: #fff;
-  text-align: center;
-
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
 }
 
 .rotate-words {
   display: inline;
-  margin-left: 10px;
 }
 
 .rotate-words span {
   width: max-content;
   position: absolute;
   background-color: #bb93fc;
+  /* left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; */
   padding-inline: 10px;
   opacity: 0;
   transform-origin: 10% 75%;

@@ -77,7 +77,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
-  padding: 0 3vw;
+  padding: 3vh 3vw;
   width: 100%;
 }
 
